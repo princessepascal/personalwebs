@@ -1,0 +1,79 @@
+label{
+    display: block;
+}
+.container{
+    margin: 10% auto;
+width: 40%;
+border: 2px solid cyan;
+background:navajowhite;
+background-repeat: no-repeat;
+background-size: 100%;
+color: black;
+font-size: 18px;
+font-style: bold;
+}
+input[type= 'text'], 
+input [type= 'password'] ,
+input[type= 'text'],
+
+button{
+    width: 100%;
+    box-sizing: border-box;
+    padding:10px ;
+    margin :5px 0;
+}
+
+body{
+    background-image: url(image.jpg)  ;
+    background-size: 100%;
+
+    
+}
+
+.textCenter{
+    text-align: center;
+}
+.errors{
+    display: none;
+}
+.header{
+ height: 25px;
+width: 100%;
+background-color: cyan ;
+margin-top: 30px;
+text-align: center;
+padding: 10px;
+
+}
+
+p{
+    color:black;
+display: table-row;
+
+}
+.footer{
+    background-image: url(footer.jpg);
+    height: 30px;
+    width: 100%;
+    background-size: 100%;
+    margin-top: 300px;
+}
+.fb{
+    height: 22px;
+    width: 22px;
+    background-image: url(fb.png);
+    background-size: 100%;
+    margin-left: 540px;
+    margin-top: -20px;
+ 
+}
+.ig{
+ height: 22px;
+ width: 22px;
+ background-image: url(ig.jpg);
+ background-size: 100%;
+ float: left;
+ margin-left: 600px;
+ margin-top: -20px;
+ 
+}

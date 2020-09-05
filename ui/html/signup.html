@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="./css/form.css"/>
+
+    <title>Simple Form | validation </title>
+</head>
+<body>
+    <div class="header">
+
+		<a href="home.html"><p>HOME</p></a>
+		<a href="blog.html"><p>BLOG</p></a>
+        <a href="portfolio.html"><P>PORTFOLIO</P></a>
+        <a href="contact.html"><P>CONTACT</P></a></LI>
+        <a href="signup.html"><P>SIGNUP</P></a> 
+        <a href="login.html"><P>LOGIN</P></a>
+    </div>
+<div class="container"><form id = "my-form">
+    <h3 class="textCenter">Sign up here</h3>
+    <div class ="form-group">
+        <label for= "name">Name</label>
+        <input type="text" placeholder="Entaer a name" name="name" id="name"/>
+<div class="error" id="nameErrors"></div>
+    </div>
+    <div class ="form-group">
+        <label for= "email">Email</label>
+        <input type="text" placeholder="Enter an email" name="email" id="email"/>
+<div class="error" id="emailErrors"></div>
+    </div>
+    <div class ="form-group">
+        <label for= "password">Password</label>
+        <input type="password" placeholder="Enter a password" name="password" id="password" style="width: 98.5%; height: 33px;"/>
+<div class="error" id="passwordErrors"></div>
+    </div>
+    <button type="submit" class="btn">Sign up</button>
+</form >
+</div>
+
+<script src="./js/form.js"></script>
+<div class="footer">
+    <a href="https://www.facebook.com/profile.php?id=100008553857111"><div class="fb"></div></a>
+    <a href="https://www.instagram.com/princesse_27j/"><div class="ig"></div></a>
+</div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCihNcitsKdowd7DaXhcetzwTf0uptOxJY",
+    authDomain: "personal-website-c8017.firebaseapp.com",
+    databaseURL: "https://personal-website-c8017.firebaseio.com",
+    projectId: "personal-website-c8017",
+    storageBucket: "personal-website-c8017.appspot.com",
+    messagingSenderId: "475851748829",
+    appId: "1:475851748829:web:ac2ae5d8ba966ef2c1f234",
+    measurementId: "G-M9YR4DXCBN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+</html>
