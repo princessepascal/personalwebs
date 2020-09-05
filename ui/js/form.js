@@ -8,7 +8,7 @@ const emailErrors = document.querySelector('#emailErrors');
 const passwordErrors = document.querySelector('#passwordErrors');
 const numberErrors = document.querySelector('#numberErrors');
 myForm.addEventListener('submit' , e=> 
-{
+{ console.log (email.value)
     e.preventDefault();
     if(
         name.value === ''|| null
@@ -24,14 +24,11 @@ if( password.value.length < 6 ||  password.value.length > 20  ){
 }
 if( password.value === 'password' ){
     passwordErrors.style.display = 'block';
-    passwordErrors.innerHTML='<p>Password cannot be password<p/>';
+    passwordErrors.innerHTML='<p>Password cannot be password</p>';
 }
-if(
-    number.value.length < 10
-)
-{
-    numberErrors.style.display= 'block';
-    numberErrors.innerHTML= '<p>Enter a valid number </p/>';
+if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value) === false){
+    emailErrors.style.display = 'block';
+    emailErrors.innerHTML = '<p> Enter valid email </p>'
 }
 
 } )
